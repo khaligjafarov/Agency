@@ -204,13 +204,13 @@ header nav a:hover {
   font-weight: 700;
   color: #212529;
 }
-#about h4 {
+#about h3 {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 64px;
   color: #6c757d;
 }
-#about h2 {
+#about h2, #about h4 {
   font-size: 24px;
   font-weight: 700;
   color: #212529;
@@ -225,13 +225,37 @@ header nav a:hover {
 #about .imgbox {
   border-radius: 100%;
   border: 7px solid #e9ecef;
-  margin-left: 40px;
+  margin-left: 20px;
   overflow: hidden;
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
 }
-#about .second {
+#about .humble {
   width: 400px;
+}
+@media (max-width: 1400px) {
+  #about .imgbox {
+    margin-left: 5px;
+  }
+  #about .humble {
+    padding: 0 15px 20px 90px;
+  }
+}
+@media (max-width: 1200px) {
+  #about .imgbox {
+    width: 150px;
+    height: 150px;
+  }
+  #about .humble {
+    padding: 0 10px 20px 80px;
+  }
+}
+@media (max-width: 992px) {
+  #about .imgbox {
+    width: 140px;
+    height: 140px;
+    margin-right: 10px;
+  }
 }
 
 #team {

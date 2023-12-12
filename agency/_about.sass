@@ -5,12 +5,12 @@
         margin-bottom: 16px
         font-weight: 700
         color: #212529
-    h4
+    h3
         font-size: 18px
         font-weight: 400
         margin-bottom: 64px
         color: #6c757d
-    h2
+    h2, h4
         font-size: 24px
         font-weight: 700
         color: #212529
@@ -23,9 +23,26 @@
     .imgbox
         border-radius: 100%
         border: 7px solid #e9ecef
-        margin-left: 40px
+        margin-left: 20px
         overflow: hidden
-        width: 160px
-        height: 160px
-    .second
+        width: 170px
+        height: 170px
+    .humble
         width: 400px
+    @media  ( max-width: 1400px )
+        .imgbox
+            margin-left: 5px
+        .humble
+            padding: 0 15px 20px 90px
+    @media ( max-width: 1200px  )
+        .imgbox
+            width: 150px
+            height: 150px    
+        .humble
+            padding: 0 10px 20px 80px
+    @media  ( max-width: 992px  )
+        .imgbox
+            width: 140px
+            height: 140px    
+            margin-right: 10px       
+            
