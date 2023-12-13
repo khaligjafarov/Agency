@@ -229,25 +229,22 @@ header nav a:hover {
   overflow: hidden;
   width: 170px;
   height: 170px;
+  margin-bottom: 100px;
 }
-#about .textbox {
+#about .first {
   width: 400px;
+  margin-bottom: 100px;
 }
 @media (max-width: 1400px) {
   #about .imgbox {
     margin-left: 5px;
-  }
-  #about .textbox {
-    padding: 0 15px 20px 90px;
   }
 }
 @media (max-width: 1200px) {
   #about .imgbox {
     width: 150px;
     height: 150px;
-  }
-  #about .textbox {
-    padding: 0 10px 20px 80px;
+    margin-right: 30px;
   }
 }
 @media (max-width: 992px) {
@@ -255,9 +252,6 @@ header nav a:hover {
     width: 100px;
     height: 100px;
     margin-right: 10px;
-  }
-  #about .textbox {
-    padding: 0 20px 20px 30px;
   }
 }
 #team {
