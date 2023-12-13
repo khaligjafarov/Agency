@@ -230,14 +230,14 @@ header nav a:hover {
   width: 170px;
   height: 170px;
 }
-#about .humble {
+#about .textbox {
   width: 400px;
 }
 @media (max-width: 1400px) {
   #about .imgbox {
     margin-left: 5px;
   }
-  #about .humble {
+  #about .textbox {
     padding: 0 15px 20px 90px;
   }
 }
@@ -246,7 +246,7 @@ header nav a:hover {
     width: 150px;
     height: 150px;
   }
-  #about .humble {
+  #about .textbox {
     padding: 0 10px 20px 80px;
   }
 }
@@ -256,16 +256,10 @@ header nav a:hover {
     height: 100px;
     margin-right: 10px;
   }
-  #about .humble {
+  #about .textbox {
     padding: 0 20px 20px 30px;
   }
 }
-@media (max-width: 768px) {
-  #about .humble {
-    text-align: right;
-  }
-}
-
 #team {
   padding: 96px 0px;
   background-color: #f8f9fa;
