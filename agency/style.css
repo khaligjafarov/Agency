@@ -325,7 +325,14 @@ header nav a:hover {
   letter-spacing: 1px;
   line-height: -1px;
 }
-
+@media (max-width: 1400px) {
+  #about .box {
+    margin: 0 100px 100px 0;
+  }
+  #about .second {
+    margin: 0 0 100px 100px;
+  }
+}
 #team {
   padding: 96px 0px;
   background-color: #f8f9fa;
