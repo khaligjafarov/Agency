@@ -53,6 +53,7 @@ header nav a:hover {
 @media (max-width: 992px) {
   header nav {
     display: none;
+    margin-right: 55px;
   }
 }
 
@@ -210,19 +211,26 @@ header nav a:hover {
   margin-bottom: 64px;
   color: #6c757d;
 }
-#about h2, #about h4 {
+#about .box {
+  margin: 0 0 100px 100px;
+}
+#about .box h2, #about .box h4 {
   font-size: 24px;
   font-weight: 700;
   color: #212529;
   margin-bottom: 8px;
 }
-#about p {
+#about .box .textbox {
+  width: 400px;
+  margin: 0 20px;
+}
+#about .box p {
   color: #6c757d;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.75;
 }
-#about .imgbox {
+#about .box .imgbox {
   border-radius: 100%;
   border: 7px solid #e9ecef;
   margin-left: 20px;
@@ -230,6 +238,10 @@ header nav a:hover {
   width: 170px;
   height: 170px;
   margin-bottom: 100px;
+}
+#about .box .end {
+  justify-content: end;
+  margin: 0 100px 100px 0;
 }
 #about .first {
   width: 400px;
