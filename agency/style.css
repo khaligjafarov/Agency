@@ -55,6 +55,33 @@ header nav a:hover {
     display: none;
     margin-right: 55px;
   }
+  header nav a {
+    margin: 0 10px;
+  }
+  header nav .imgbox {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  header .btn {
+    display: flex;
+    margin-right: 30px;
+  }
+  header .btn .imgbox {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 576px) {
+  header .menu {
+    height: 70px;
+  }
+  header .menu .btn {
+    margin-right: 10px;
+    padding: 6px 10px;
+  }
+  header .menu .imgbox {
+    margin-left: 20px;
+  }
 }
 
 #welcome {
@@ -239,32 +266,23 @@ header nav a:hover {
   height: 170px;
   margin-bottom: 100px;
 }
-#about .box .end {
-  justify-content: end;
-  margin: 0 100px 100px 0;
+#about .part {
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e6e6e6;
+  background-color: #ffc800;
+  border-radius: 100%;
+  overflow: hidden;
 }
-#about .first {
-  width: 400px;
-  margin-bottom: 100px;
+#about .part .minibox {
+  text-align: center;
+  padding: 0 40px;
 }
-@media (max-width: 1400px) {
-  #about .imgbox {
-    margin-left: 5px;
-  }
-}
-@media (max-width: 1200px) {
-  #about .imgbox {
-    width: 150px;
-    height: 150px;
-    margin-right: 30px;
-  }
-}
-@media (max-width: 992px) {
-  #about .imgbox {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-  }
+#about .part .minibox h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
 }
 #team {
   padding: 96px 0px;
