@@ -1,17 +1,16 @@
 #welcome
     background-image: url("Assets/background1.jpg")
     background-position: center center
-    background-repeat: no-repeat
     background-size: cover
     .box
         height: 700px
     h1
-        font-size: 75px
-        font-weight: 700
-        margin: 0px 0px 40px
-    h2
         font-size: 40px
-        margin: 67px 0px 40px
+        margin-bottom: 20px
+    h2
+        font-size: 90px
+        margin-bottom: 50px
+        font-weight: 700
     .btn
         h3
             padding: 19px 55px
@@ -26,3 +25,11 @@
                 background-color: #d9aa00
     h1, h2, h3
         color: #ffffff
+
+    @media ( max-width: 576px )
+        .box
+            .textbox
+                h1
+                    font-size: 35px
+                h2
+                    font-size: 70px

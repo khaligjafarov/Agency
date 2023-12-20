@@ -28,6 +28,7 @@ header
         .menu
             display: flex
             justify-content: space-around
+
     @media  ( max-width: 992px  )
         nav
             display: none
@@ -36,17 +37,15 @@ header
                 margin: 0 10px
             .imgbox
                 margin-left: 40px
-    @media  ( max-width: 768px )
-        .btn
-            display: flex
-            margin-right: 30px
-            .imgbox
-                margin-left: 20px
-    @media ( max-width: 576px )
+
+    @media screen and ( max-width: 768px )
+        nav
+            display: none
+        .imgbox
+            margin-left: 20px
+
+    @media screen and ( max-width: 576px )
         .menu
             height: 70px
-            .btn
-                margin-right: 10px
-                padding: 6px 10px
             .imgbox
-                margin-left: 20px
+                margin-left: 20px        

@@ -62,22 +62,17 @@ header nav a:hover {
     margin-left: 40px;
   }
 }
-@media (max-width: 768px) {
-  header .btn {
-    display: flex;
-    margin-right: 30px;
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
   }
-  header .btn .imgbox {
+  header .imgbox {
     margin-left: 20px;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   header .menu {
     height: 70px;
-  }
-  header .menu .btn {
-    margin-right: 10px;
-    padding: 6px 10px;
   }
   header .menu .imgbox {
     margin-left: 20px;
@@ -87,20 +82,19 @@ header nav a:hover {
 #welcome {
   background-image: url("Assets/background1.jpg");
   background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 #welcome .box {
   height: 700px;
 }
 #welcome h1 {
-  font-size: 75px;
-  font-weight: 700;
-  margin: 0px 0px 40px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 #welcome h2 {
-  font-size: 40px;
-  margin: 67px 0px 40px;
+  font-size: 90px;
+  margin-bottom: 50px;
+  font-weight: 700;
 }
 #welcome .btn h3 {
   padding: 19px 55px;
@@ -117,6 +111,14 @@ header nav a:hover {
 }
 #welcome h1, #welcome h2, #welcome h3 {
   color: #ffffff;
+}
+@media (max-width: 576px) {
+  #welcome .box .textbox h1 {
+    font-size: 35px;
+  }
+  #welcome .box .textbox h2 {
+    font-size: 70px;
+  }
 }
 
 #services {
@@ -156,6 +158,25 @@ header nav a:hover {
   line-height: 1.75;
   font-size: 18px;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  #services .textbox {
+    padding-bottom: 50px;
+  }
+  #services .textbox h1 {
+    font-size: 40px;
+  }
+  #services .textbox h3 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  #services .textbox h2 {
+    font-size: 25px;
+  }
+  #services .textbox p {
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
 }
 
 #portfolio {
