@@ -49,7 +49,8 @@ header .btn {
   display: none;
   border: 1px solid #ffffff;
   padding: 2px;
-  opacity: 0.5;
+  opacity: 0.4;
+  font-weight: 700;
 }
 @media (max-width: 1200px) {
   header .menu {
@@ -70,6 +71,11 @@ header .btn {
   }
   header .btn {
     display: block;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+  }
+  header .btn h1 {
+    margin-right: 5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -86,6 +92,12 @@ header .btn {
   }
   header .menu .imgbox {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 280px) {
+  header .menu {
+    display: flex;
+    flex-direction: column;
   }
 }
 

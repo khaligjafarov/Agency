@@ -29,7 +29,8 @@ header
         display: none
         border: 1px solid #ffffff
         padding: 2px
-        opacity: 0.5
+        opacity: 0.4
+        font-weight: 700
 
     @media (max-width: 1200px)
         .menu
@@ -45,7 +46,11 @@ header
             .imgbox
                 margin-left: 40px
         .btn
-            display: block        
+            display: block    
+            padding: 5px 10px 5px 10px  
+            display: flex
+            h1
+                margin-right: 5px 
 
     @media screen and ( max-width: 768px )
         nav
@@ -58,3 +63,10 @@ header
             height: 70px
             .imgbox
                 margin-left: 20px
+
+    @media screen and ( max-width: 280px  )
+        .menu
+            display: flex
+            flex-direction: column
+  
+                    
