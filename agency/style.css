@@ -44,6 +44,13 @@ header nav a {
 header nav a:hover {
   color: #ffc800;
 }
+header .btn {
+  color: #ffffff;
+  display: none;
+  border: 1px solid #ffffff;
+  padding: 2px;
+  opacity: 0.5;
+}
 @media (max-width: 1200px) {
   header .menu {
     display: flex;
@@ -60,6 +67,9 @@ header nav a:hover {
   }
   header nav .imgbox {
     margin-left: 40px;
+  }
+  header .btn {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {
