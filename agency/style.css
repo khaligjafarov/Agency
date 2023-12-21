@@ -98,6 +98,10 @@ header .btn {
   header .menu {
     display: flex;
     flex-direction: column;
+    margin: 10px 100px 10px 0;
+  }
+  header .menu .btn {
+    padding: 2px 2px;
   }
 }
 
@@ -317,9 +321,9 @@ header .btn {
 #about .box .imgbox {
   width: 170px;
   height: 170px;
-  border-radius: 90px;
+  border-radius: 100%;
   border: 6px solid rgba(210, 210, 210, 0.4784313725);
-  margin: 0 30px;
+  margin: 0 20px;
   overflow: hidden;
 }
 #about .second {
@@ -347,14 +351,84 @@ header .btn {
   letter-spacing: 1px;
   line-height: -1px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 992px) {
   #about .box {
-    margin: 0 100px 100px 0;
+    margin: 0 0 100px 0;
+    align-items: flex-start;
   }
-  #about .second {
-    margin: 0 0 100px 100px;
+  #about .box .textbox {
+    width: 245px;
+  }
+  #about .box .imgbox {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  #about .part {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+  }
+  #about .part .minibox {
+    padding: 0;
+  }
+  #about .part .minibox h1 {
+    font-size: 15px;
+    padding: 0 10px 0;
   }
 }
+@media (max-width: 768px) {
+  #about .textbox h1 {
+    font-size: 35px;
+  }
+  #about .textbox h3 {
+    font-size: 18px;
+  }
+  #about .box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #about .box .textbox {
+    text-align: start;
+    width: 400px;
+  }
+  #about .box .imgbox {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0 0;
+  }
+  #about .second {
+    display: flex;
+    flex-direction: row;
+  }
+  #about .part {
+    width: 80px;
+    height: 80px;
+    margin-right: 100px;
+  }
+  #about .part .minibox {
+    padding: 0;
+  }
+  #about .part .minibox h1 {
+    font-size: 12px;
+  }
+  #about .end {
+    display: flex;
+    justify-content: start;
+  }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  #about .textbox h1 {
+    font-size: 30px;
+  }
+  #about .textbox h3 {
+    font-size: 16px;
+  }
+  #about .textbox h2, #about .textbox h4 {
+    font-size: 25px;
+  }
+}
+
 #team {
   padding: 96px 0px;
   background-color: #f8f9fa;

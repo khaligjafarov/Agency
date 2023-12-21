@@ -29,12 +29,12 @@
         .imgbox
             width: 170px
             height: 170px
-            border-radius: 90px
+            border-radius: 100%
             border: 6px solid #d2d2d27a
-            margin: 0 30px
+            margin: 0 20px
             overflow: hidden
     .second
-        margin: 0 100px 100px 0      
+        margin: 0 100px 100px 0
     .end
         display: flex
         justify-content: center
@@ -54,17 +54,70 @@
                 letter-spacing: 1px
                 line-height: -1px
 
-    @media ( max-width: 1400px  )
+    @media ( max-width: 992px  )
         .box
-            margin: 0 100px 100px 0
+            margin: 0 0 100px 0
+            align-items: flex-start
+            .textbox
+                width: 245px
+            .imgbox
+                width: 100px
+                height: 100px
+                margin-top: 10px
+        .part
+            width: 100px
+            height: 100px
+            margin-right: 25px
+            .minibox
+                padding: 0
+                h1
+                    font-size: 15px
+                    padding: 0 10px 0
+
+    @media  ( max-width: 768px  )
+        .textbox
+            h1
+                font-size: 35px
+            h3
+                font-size: 18px
+        .box 
+            display: flex
+            flex-direction: row-reverse
+            .textbox
+                text-align: start
+                width: 400px
+            .imgbox
+                width: 80px
+                height: 80px
+                margin: 10px 0 0  
         .second
-            margin: 0 0 100px 100px
-
-    @media   ( max-width: 1200px )
-        
+            display: flex
+            flex-direction: row
+        .part
+            width: 80px
+            height: 80px
+            margin-right: 100px
+            .minibox
+                padding: 0
+                h1
+                    font-size: 12px
             
-                
-             
-                    
+        .end
+            display: flex
+            justify-content: start
 
- 
+
+
+        @media  ( max-width: 576px  )
+            .textbox
+                h1
+                    font-size: 30px
+                h3
+                    font-size: 16px
+                h2, h4
+                    font-size: 25px 
+                          
+                        
+            
+
+       
