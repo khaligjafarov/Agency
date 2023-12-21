@@ -404,7 +404,6 @@ header .btn {
   #about .part {
     width: 80px;
     height: 80px;
-    margin-right: 100px;
   }
   #about .part .minibox {
     padding: 0;
@@ -417,15 +416,29 @@ header .btn {
     justify-content: start;
   }
 }
-@media (max-width: 768px) and (max-width: 576px) {
-  #about .textbox h1 {
+@media (max-width: 576px) {
+  #about .box .imgbox {
+    width: 80px;
+    height: auto;
+  }
+  #about .box .textbox h1 {
     font-size: 30px;
   }
-  #about .textbox h3 {
+  #about .box .textbox h3 {
     font-size: 16px;
   }
-  #about .textbox h2, #about .textbox h4 {
+  #about .box .textbox h2, #about .box .textbox h4 {
     font-size: 25px;
+  }
+  #about .part {
+    width: 80px;
+    height: 80px;
+  }
+  #about .part .minibox {
+    padding: 0;
+  }
+  #about .part .minibox h1 {
+    font-size: 10px;
   }
 }
 
