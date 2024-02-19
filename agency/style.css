@@ -17,7 +17,7 @@ a:hover {
 
 header {
   padding: 16px 0;
-  background-color: #212529;
+  background-color: #ffffff;
   height: 75px;
   display: flex;
   align-items: center;
@@ -26,6 +26,7 @@ header {
   right: 0;
   left: 0;
   z-index: 1;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 header .imgbox {
   width: 140px;
@@ -37,12 +38,26 @@ header .imgbox img {
 header nav a {
   padding: 15px;
   font-size: 18px;
-  color: #ffffff;
+  color: #000000;
   transition: 0.15s;
   cursor: pointer;
 }
 header nav a:hover {
-  color: #ffc800;
+  background-color: #f0f0f0;
+}
+header .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
 }
 header .btn {
   color: #ffffff;
@@ -109,6 +124,7 @@ header .btn {
   background-image: url("Assets/background1.jpg");
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #welcome .box {
   height: 700px;
