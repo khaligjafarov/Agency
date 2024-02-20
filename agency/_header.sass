@@ -1,6 +1,7 @@
 header
     padding: 16px 0
-    background-color: #ffffff
+    // background-color: rgba(0,0 ,0 ,.1 )
+    // backdrop-filter: blur(50px)
     height: 75px
     display: flex
     align-items: center
@@ -10,79 +11,72 @@ header
     left: 0
     z-index: 1
     box-shadow: 3px 3px 5px rgba(0,0 ,0 ,0.1 )
-   
-    .imgbox
-        width: 140px
-        padding-left: -50px
-        img
-            cursor: pointer
+    ::before
+        content: ''
+        top: 0
+        left: 0
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba(0,0 0,.1 , )
+        backdrop-filter: blur(50px)
+    .menu
+        .btn
+            display: none
+            font-size: 2rem
+            a
+                color: #ffffff
+                right: 5%
+            
+
     nav
+
         a
+
             padding: 15px
-            font-size: 18px
-            color: #000000
-            transition: 0.15s
-            cursor: pointer
+            font-size: 1.15rem
+            color: #ffffff
+            font-weight: 500
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
             &:hover
                 background-color: #f0f0f0
-    .sidebar
-        position: fixed
-        top: 0
-        right: 0
-        height: 100vh
-        width: 250px
-        backdrop-filter: blur(10px)
-        z-index: 999
-        background-color: rgba(255,255 ,255 ,0.2 )
-        box-shadow: -10px 0px 10px rgba(0,0 ,0 ,0.1 )   
-        display: none
-        flex-direction: column  
+    // .sidebar
+    //     position: fixed
+    //     top: 0
+    //     right: 0
+    //     height: 100vh
+    //     width: 250px
+    //     backdrop-filter: blur(10px)
+    //     z-index: 999
+    //     background-color: rgba(255,255 ,255 ,0.2 )
+    //     box-shadow: -10px 0px 10px rgba(0,0 ,0 ,0.1 )   
+    //     display: none
+    //     flex-direction: column  
 
-
-    .btn
+    h3
+        font-size: 2rem
         color: #ffffff
-        display: none
-        border: 1px solid #ffffff
-        padding: 2px
-        opacity: 0.4
         font-weight: 700
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
-    @media (max-width: 1200px)
+    @media screen and ( max-width: 992px )
         .menu
-            display: flex
-            justify-content: space-around
-
-    @media  ( max-width: 992px  )
-        nav
-            display: none
-            margin-right: 55px
-            a
-                margin: 0 10px
-            .imgbox
-                margin-left: 40px
-        .btn
-            display: block
-            padding: 5px 10px 5px 10px
-            display: flex
-            h1
-                margin-right: 5px
-
-    @media screen and ( max-width: 768px )
-        nav
-            display: none
-        .imgbox
-            margin-left: 20px
-
-    @media screen and ( max-width: 576px )
-        .menu
-            height: 70px
-            .imgbox
-                margin-left: 20px
-
-    @media screen and ( max-width: 280px  )
-        .menu
-            display: flex
-            flex-direction: column
-            margin: 10px 100px 10px 0
             .btn
-                padding: 2px 2px
+                display: block
+                
+        header
+            padding: 1.3rem 5%
+        nav
+            position: absolute
+            left: 0
+            top: 100%
+            width: 100%
+            height: 17.7rem
+            background: rgba(0,0 ,0 ,.1 )
+            backdrop-filter: blur(50px)
+            a
+                display: block
+                text-align: center
+                margin: 0.5rem 0
+                
+                
